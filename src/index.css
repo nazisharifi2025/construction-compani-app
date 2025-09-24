@@ -2,7 +2,9 @@
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
-
+@theme{
+  --color-brand: #ffb703;
+}
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -119,4 +121,30 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+@property --degree{
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+@layer components{
+  .slik-slid > div {
+    display: flex !important;
+    justify-content: center;
+  }
+  .moto{
+    color: transparent;
+    background-clip: text;
+    background-image: conic-gradient(from var(--degree) , #49380e , #ffb219 , #fff);
+    animation: rotetbg 4s infinite linear ;
+  };
+  @keyframes rotetbg {
+    from{
+      --degree: 0deg ;
+    }
+    to{
+      --degree: 360deg;
+    }
+  }
+
 }
