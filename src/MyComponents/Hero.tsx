@@ -76,7 +76,7 @@ function Hero() {
     },
   ]
   return (
-    <div className="w-full lg:h-screen  bg-no-repeat bg-cover bg-center bg-[url('/images/bg-hero.jpg')]">
+    <div className="w-full lg:h-screen -z-50 bg-no-repeat bg-cover bg-center bg-[url('/images/bg-hero.jpg')]">
       <div className="flex lg:pt-24 py-24 w-full h-full md:flex-row bg-stone-100/85 lg:flex-row md:flex-r flex-col gap-0">
         {/* Left Side */}
         <div className="h-full md:gap-8 flex-1 min-w-0 p-3 mt-18 justify-center lg:items-start items-center flex flex-col">
@@ -101,15 +101,15 @@ function Hero() {
         <div className="flex-1 min-w-0 h-full flex flex-col mt-18 justify-center items-center">
           <h1 className="font-bold text-3xl mb-4">Our Expert Team</h1>
           <div className="lg:w-[600px] md:w-[90%] w-[90%]">
-            <Slider {...settings}>
+            <Slider {...settings} className="">
               {Cards.map((item , index)=>(
                    <div key={index} className="p-2 group relative lg:w-[300px] md:w-[300px] w-full h-[400px]">
                 <img
                   src={item.imgUrl}
                   alt="hero3"
-                  className="rounded-md shadow-md -z-50 h-full w-full"
+                  className="rounded-md shadow-md  h-full w-full"
                 />
-                <div className="h-[385px] w-[285px] flex opacity-0  rounded-md bg-black/50 absolute  flex-col gap-3 text-white -bottom-[385px] group-hover:bottom-2 group-hover:opacity-100 transition-all duration-500 ease-initial right-2 justify-center items-center">
+                <div className="h-[385px] w-[285px] flex opacity-0 rounded-md bg-black/50 absolute  flex-col gap-3 text-white -bottom-[385px] group-hover:bottom-2 group-hover:opacity-100 transition-all duration-500 ease-initial right-2 justify-center items-center">
                 <h1 className="text-2xl">{item.name}</h1>
                 <h2 className="text-xl text-amber-600">{item.Job}</h2>
                 <p className="w-[90%] mx-auto text-center">{item.des}</p>
