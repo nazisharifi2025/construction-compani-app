@@ -15,7 +15,7 @@ function AboutUs() {
             <motion.div
             animate={{rotateZ:0}}
             initial={{rotateZ: 360}}
-            transition={{duration:7 , repeat:Infinity, ease : 'linear'}}
+            transition={{duration:12 , repeat:Infinity, ease : 'linear'}}
 
             className='h-[75vh] w-[75vh] -z-50 -top-6 text-amber-600 lg:-right-5 -right-26 flex-wrap gap-10 rounded-full  flex justify-between items-center  absolute'>
               <div className='flex justify-between w-full'>

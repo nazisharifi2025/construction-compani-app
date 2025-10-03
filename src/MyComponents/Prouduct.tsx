@@ -44,9 +44,9 @@ function Prouduct() {
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, voluptates autem. Natus, rem magni repellat assumenda soluta eaque magnam culpa maxime consequatur cum, unde mollitia animi rerum possimus vel labore.</p>
         </motion.div>
           <motion.div
-         animate={{opacity:0 ,y: 100}}
-         whileInView={{opacity:100 , y:0}}
-         transition={{duration:1.3 , ease:'linear'}}    
+         animate={{opacity:0 ,x: -100}}
+         whileInView={{opacity:100 , x:0}}
+         transition={{duration:1.3 ,delay:1.3, ease:'linear'}}    
         className='lg:w-[60%] w-full lg:p-10 md:px-10 p-1 h-full flex flex-col gap-5 justify-center items-start'>
            {/* <h3 className='text-amber-600'>PRODUCT RELATED QUERIES</h3>
            <h1 className='text-6xl'>Products & Service</h1> */}
