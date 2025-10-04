@@ -42,7 +42,7 @@ function Servece() {
         },
     ]
     const [search,setSearch] = useState("");
-    const filtred = serveces.filter(service=> service.title.includes(search));
+    const filtred = serveces.filter(service=> service.title.toLocaleLowerCase ().includes(search));
   return (
     <div className='h-fit w-full flex flex-col items-center'>
          <div className='h-[40vh] pt-14 flex flex-col gap-4 justify-center items-center w-full'>
