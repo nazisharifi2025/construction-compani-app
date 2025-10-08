@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { ChevronRight } from 'lucide-react'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 function Servece() {
     const serveces = [
@@ -42,7 +42,17 @@ function Servece() {
         },
     ]
     const [search,setSearch] = useState("");
-    const filtred = serveces.filter(service=> service.title.toLocaleLowerCase ().includes(search));
+    const [filterServeces,setFilterServeces] = useState(serveces);
+    useEffect(() => {
+        if (search.trim() === "") {
+            setFilterServeces(serveces);
+        }
+        else{
+            const filtred = serveces.filter(service=> service.title.toLocaleLowerCase ().includes(search.toLowerCase()));
+           return setFilterServeces(filtred);
+        }
+    }, [search, serveces]);
+    
   return (
     <div className='h-fit w-full flex flex-col items-center'>
          <div className='h-[40vh] pt-14 flex flex-col gap-4 justify-center items-center w-full'>
@@ -50,7 +60,7 @@ function Servece() {
         <input value={search} onChange={(e)=> setSearch(e.target.value)} type="search" className='w-[60%] p-3 outline-0 rounded-full border border-gray-400' placeholder='Search Our Serveces' />
     </div>
     <div className='h-fit p-12 w-full flex justify-center items-center flex-wrap gap-7'>
-        {filtred.map((serveces,index)=>(
+        {filterServeces.map((serveces,index)=>(
         <motion.div
         initial={{opacity:0, y:-80}}
         whileInView={{opacity:1 , y: 0}}
