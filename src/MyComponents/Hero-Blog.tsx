@@ -1,12 +1,24 @@
-import { ChevronRight } from "lucide-react"
-
+import { ChevronLeft, ChevronRight} from 'lucide-react'
+import { motion } from 'framer-motion'
 function HeroBlog() {
   return (
-    <div className='h-[50vh] bg-cover bg-no-repeat bg-center bg-[url(/images/heroBlog.jpg)] bg-amber-600 w-full'>
-        <div className="h-full w-full flex justify-end flex-col px-24 items-end py-12 text-white bg-linear-to-t from-amber-500/45 to-amber-700/30">
-        <h1 className="text-4xl font-bold">Blog Page</h1>
-        <button className="flex space-x-3 text-amber-600 py-3 px-7 bg-white">Home<ChevronRight/>Blog </button>
-        </div>
+    <div className='lg:h-[60vh] bg-cover -z-50  bg-no-repeat bg-center bg-[url(/images/bouldeng.avif)]  w-full grid lg:grid-cols-2 grid-cols-1 my-5 overflow-hidden'>
+        <motion.div 
+         initial={{x:-100}}
+        whileInView={{x:0}}
+        transition={{duration:1.3 , ease: 'linear'}}
+        className='p-4 flex  clip-path z-10 bg-blue-950/70 justify-start items-center  gap-3'>
+          <h2 className='font-bold text-6xl text-amber-600 flex items-center'><ChevronLeft size={67}/> Blog Page <ChevronRight size={67}/></h2>
+          
+        </motion.div>
+          <motion.div
+        initial={{x:100}}
+        whileInView={{x:0}}
+        transition={{duration:1.3 , ease: 'linear'}}
+        className='flex justify-end pl-60 items-end clip-path2 h-full bg-blue-950/60 z-10 p-5'>
+          <h1 className='text-3xl lg:w-[70%] flex space-x-3 text-white items-center '>Home<ChevronRight size={32} className='text-amber-600'/>Blog Page</h1>
+            {/* <img src="/images/download.jpeg" className='lg:h-[80%] h-full lg:w-[80%] w-[95%] ' alt="" /> */}
+        </motion.div>
     </div>
   )
 }

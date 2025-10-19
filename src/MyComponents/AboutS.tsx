@@ -3,7 +3,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 function AboutS() {
   return (
-    <div className='lg:h-[70vh] bg-cover -z-50  bg-no-repeat bg-center bg-[url(/images/bouldeng.avif)]  w-full grid lg:grid-cols-2 grid-cols-1 my-5 overflow-hidden'>
+    <div className='lg:h-[60vh] bg-cover -z-50  bg-no-repeat bg-center bg-[url(/images/bouldeng.avif)]  w-full grid lg:grid-cols-2 grid-cols-1 my-5 overflow-hidden'>
         <motion.div 
          initial={{x:-100}}
         whileInView={{x:0}}
