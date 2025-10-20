@@ -1,8 +1,13 @@
-import React from 'react'
+
+import ApiWether from '../MyComponents/ApiWeather'
+import HeroAbout from '../MyComponents/HeroAbout'
 
 function Wether() {
   return (
-    <div>Wether</div>
+    <div>
+      <HeroAbout/>
+      <ApiWether/>
+    </div>
   )
 }
 

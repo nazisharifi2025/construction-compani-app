@@ -14,7 +14,7 @@ function Navbar() {
             <a className='hover:border-b font-bold border-gray-700 transition-all duration-1000 ease-in-out' href="/Contuct">Contuct Us</a>
         </ul>
         <div className='flex space-x-8'>
-        <button className='px-6 py-2 rounded-md outline-1 hover:outline-0 hover:bg-gray-300/40 hidden md:block'>Wether</button>
+        <button className='px-6 py-2 rounded-md outline-1 hover:outline-0 hover:bg-gray-300/40 hidden md:block'><a href="/Wether">Wether</a></button>
         <button  className='lg:hidden block'>
              <Menu onClick={()=> setOpen(!open)} className={`${!open ? "block" : "hidden"}`} size={24} />
              <X onClick={()=> setOpen(!open)} className={`${open ? "block" : "hidden"}`} size={24}/>
