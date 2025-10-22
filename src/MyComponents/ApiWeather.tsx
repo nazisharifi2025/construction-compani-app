@@ -1,4 +1,3 @@
-    import { Cloud, CloudDrizzle, Rainbow, Snowflake, SunIcon } from "lucide-react";
     import { useEffect, useState } from "react";
 
     const API_Key = "7428939f153f70012602166492e9ae5d";
@@ -12,9 +11,13 @@
         icon: string
     };
     const [wheather,setwhether] = useState<wait[]>([]);
+    // const [main , setmain] = useState({});
+    // const[dt , setDt] = useState("");
+    // const[sys , setsys] = useState({});
+    const [icon , setIcon] = useState("");
         useEffect(()=>{
         async function FeatchData() {
-            const url = `https://api.openweathermap.org/data/2.5/weather?q=${cety}&appid=${API_Key}&units=metric&lang=fa`
+            const url = `https://api.openweathermap.org/data/2.5/weather?q=${cety}&appid=${API_Key}&units=metric&lang=fa`;
         const respons = await fetch(url);
         const data = await respons.json();
         setwhether(data.weather);
@@ -40,13 +43,14 @@
                 <h2>{cety}</h2>
             <h1 className=" font-black text-7xl">{item.main}</h1>
             <p className="text-xl font-bold">{item.description}</p>
-            <img
+            <img src={icon === "cloud"?"/images/Weather-icons/cloudy.png": icon === "Sun"?"/images/Weather-icons/sun_2720081.png":icon ==="Rain" ? "/images/Weather-icons/rainy-day_4724094.png":icon === "Snow"? "/images/Weather-icons/snow.png":"/images/Weather-icons/windy (2).png"} alt="" />
+            {/* {/* <img
                 src={`https://openweathermap.org/img/wn/${item.icon}@2x.png`}
                 alt={item.description}
                 className="mt-4 w-24 h-24"
-                />
-            </div>
-        ))}
+                /> */}
+            </div> 
+        ))};
         </div>
     )
     }
