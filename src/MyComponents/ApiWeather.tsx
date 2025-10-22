@@ -43,8 +43,8 @@
                 <h2>{cety}</h2>
             <h1 className=" font-black text-7xl">{item.main}</h1>
             <p className="text-xl font-bold">{item.description}</p>
-            <img src={icon === "cloud"?"/images/Weather-icons/cloudy.png": icon === "Sun"?"/images/Weather-icons/sun_2720081.png":icon ==="Rain" ? "/images/Weather-icons/rainy-day_4724094.png":icon === "Snow"? "/images/Weather-icons/snow.png":"/images/Weather-icons/windy (2).png"} alt="" />
-            {/* {/* <img
+            <img src={item.main === "clouds"?"/images/Weather-icons/cloudy.png": item.main === "Sun"?"/images/Weather-icons/sun_2720081.png":item.main ==="Rain" ? "/images/Weather-icons/rainy-day_4724094.png":item.main === "Snow"? "/images/Weather-icons/snow.png":"/images/Weather-icons/windy (2).png"} alt="" />
+            {/* <img
                 src={`https://openweathermap.org/img/wn/${item.icon}@2x.png`}
                 alt={item.description}
                 className="mt-4 w-24 h-24"
