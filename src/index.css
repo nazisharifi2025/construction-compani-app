@@ -161,5 +161,98 @@
       --degree: 360deg;
     }
   }
+  .spinner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #7dd3fc, #1e40af);
+}
+
+/* ☀️ خورشید */
+.sun-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sun {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  background: #facc15;
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.9);
+  animation: spin 5s linear infinite;
+}
+
+.sun-glow {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  border: 4px solid rgba(255, 255, 153, 0.6);
+  border-radius: 50%;
+  animation: pulse 3s ease-in-out infinite;
+}
+
+/* 🌧️ قطرات باران */
+.rain-container {
+  display: flex;
+  margin-top: 1.5rem;
+  gap: 0.5rem;
+}
+
+.raindrop {
+  width: 8px;
+  height: 16px;
+  border-radius: 4px;
+  background: #60a5fa;
+  animation: raindrop 1.2s linear infinite;
+}
+
+.delay-0 {
+  animation-delay: 0ms;
+}
+.delay-1 {
+  animation-delay: 300ms;
+}
+.delay-2 {
+  animation-delay: 600ms;
+}
+
+/* ✨ انیمیشن‌ها */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+@keyframes raindrop {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+}
+
 
 }
