@@ -1,6 +1,7 @@
     import { useEffect, useState, useTransition } from "react";
 import { ClipLoader, PuffLoader } from "react-spinners";
 import WeatherRainSpinner from "../Articals/Spinner";
+import Clock from "./Clock";
 
     const API_Key = "7428939f153f70012602166492e9ae5d";
 
@@ -117,14 +118,15 @@ import WeatherRainSpinner from "../Articals/Spinner";
         //     const urlHerat = `https://api.openweathermap.org/data/2.5/weather?q=Herat&appid=${API_Key}&units=metric&lang=fa`;
         //     const urlLondon = `https://api.openweathermap.org/data/2.5/weather?q=London&appid=${API_Key}&units=metric&lang=fa`;
     return (
-        <div className="h-screen py-12 w-full bg-cover flex flex-col justify-center gap-6 items-center bg-no-repeat bg-center bg-[url(/images/w3.jpg)]">
+        <div className="h-screen relative py-12 w-full bg-cover flex flex-col justify-center gap-6 items-center bg-no-repeat bg-center bg-[url(/images/w3.jpg)]">
+           
 
     { Wait ? (
         <div className="h-full w-full flex justify-center items-center bg-gradient-to-b from-blue-400 to-blue-700">
        <ClipLoader color="#36D7B7" size={50} />
     </div>
     ) : <div className="w-full h-[50vh] flex justify-center flex-col gap-6 items-center">
-      
+      <Clock/>
         <div className="flex justify-between items-center px-6 w-full">
         {/* دومین کارد */}
            {wheatherHerat.map((item,index)=>(

@@ -9,7 +9,7 @@ function Clock() {
         return ()=> clearInterval(Setinterval);
     },[])
   return (
-    <div className="font-bold text-4xl font-serif">{clock}</div>
+    <div className="font-bold text-4xl absolute right-6 bottom-18  text-white">{clock}</div>
   )
 }
 
