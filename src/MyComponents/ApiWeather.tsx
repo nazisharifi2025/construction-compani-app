@@ -97,26 +97,6 @@ import Clock from "./Clock";
         FeatchDataBamyan();
         },[cety]);
         // دیتا چهارمی
-                          const [wheatherLondon,setwhetherLondon] = useState<wait[]>([]);
-    const [mainLondon , setmainLondun] = useState<teamp | null>(null);
-    // const[dt , setDt] = useState("");
-    const[sysLondon, setsysLondon] = useState<syst | null>(null);
-        useEffect(()=>{
-        async function FeatchDataLondon() {
-            const urlLondon = `https://api.openweathermap.org/data/2.5/weather?q=London&appid=${API_Key}&units=metric&lang=fa`;
-            starttranstion(async() => {
-        const respons = await fetch(urlLondon);
-        const data = await respons.json();
-        setwhetherLondon(data.weather);
-        setmainLondun(data.main);
-        setsysLondon(data.sys);
-            }); 
-        }
-        FeatchDataLondon();
-        },[cety]);
-        //  
-        //     const urlHerat = `https://api.openweathermap.org/data/2.5/weather?q=Herat&appid=${API_Key}&units=metric&lang=fa`;
-        //     const urlLondon = `https://api.openweathermap.org/data/2.5/weather?q=London&appid=${API_Key}&units=metric&lang=fa`;
     return (
         <div className="h-screen relative py-12 w-full bg-cover flex flex-col justify-center gap-6 items-center bg-no-repeat bg-center bg-[url(/images/w3.jpg)]">
            
