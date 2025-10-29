@@ -1,9 +1,9 @@
-import React from 'react'
 import Hero from '../MyComponents/Hero'
 import AboutUs from '../MyComponents/AboutUs'
 import Testimonials from '../MyComponents/Testimonials'
 import Prouduct from '../MyComponents/Prouduct'
 import Footer from '../MyComponents/Footer'
+import Spinn from '../Articals/Spinn'
 
 function Home() {
   return (
@@ -13,6 +13,7 @@ function Home() {
       <Testimonials/>
       <Prouduct/> 
       <Footer/>
+      <Spinn />
     </div>
   )
 }

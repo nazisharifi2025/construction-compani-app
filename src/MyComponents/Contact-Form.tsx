@@ -54,11 +54,8 @@ function ContactForm() {
                     <div className="flex flex-col gap-2 "> 
                         <strong className="text-2xl font-bold text-amber-500">Phone</strong>
                         <p  className="font-bol">+93 795064649</p>
-                        <p  className="font-bol">+93 795064649</p>
-                        <p  className="font-bol">+93 795064649</p>
                     </div>
                 </div>
-                p
                 <div className="flex gap-4 border items-center border-gray-400 text-white p-2 w-full h-24">
                     <Mail size={36} className="text-amber-500"/>
                     <div className="flex flex-col gap-2 "> 
