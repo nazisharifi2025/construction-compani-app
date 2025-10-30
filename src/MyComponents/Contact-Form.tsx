@@ -53,7 +53,7 @@ function ContactForm() {
                     <PhoneCall  size={36} className="text-amber-500"/>
                     <div className="flex flex-col gap-2 "> 
                         <strong className="text-2xl font-bold text-amber-500">Phone</strong>
-                        <p  className="font-bol">+93 795064649</p>
+                        <p  className="font-bol"><a href="tel:0093795064649">+93 795 064 649</a></p>
                     </div>
                 </div>
                 <div className="flex gap-4 border items-center border-gray-400 text-white p-2 w-full h-24">
@@ -67,7 +67,7 @@ function ContactForm() {
                     <Github size={36} className="text-amber-500"/>
                     <div className="flex flex-col gap-2 "> 
                         <strong className="text-2xl font-bold text-amber-500">GitHub</strong>
-                        <p  className="font-bol">Nazisharifi2025</p>
+                        <p  className="font-bol"><a href="https://github.com/nazisharifi2025">Nazisharifi2025</a></p>
                     </div>
                 </div>
             </div>
