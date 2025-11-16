@@ -22,18 +22,17 @@ function ContactForm() {
       .send(service_id,template_id ,content, {
         publicKey: publi_key,
       })
-      .then(
-        () => {
-          alert('SUCCESS!');
-          setName("");
-          setEmail("");
-          setSubject("");
-          setMessege("");
-        },
-        (error) => {
-          alert('FAILED...');
-        },
-      );
+   .then(() => {
+    alert('SUCCESS!');
+    setName("");
+    setEmail("");
+    setSubject("");
+    setMessege("");
+})
+.catch((error) => {
+     console.error(error); 
+    alert('FAILED...');
+});
 
     }
   return (

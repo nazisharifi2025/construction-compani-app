@@ -5,7 +5,7 @@ import Clock from "./Clock";
     const API_Key = "7428939f153f70012602166492e9ae5d";
 
     function ApiWether() {
-    const [cety,setCety] = useState("kabul");
+    const [cety] = useState("kabul");
     type wait ={  
       id: number;
   main: string;
