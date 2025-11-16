@@ -3,7 +3,7 @@ import AboutUs from '../MyComponents/AboutUs'
 import Testimonials from '../MyComponents/Testimonials'
 import Prouduct from '../MyComponents/Prouduct'
 import Footer from '../MyComponents/Footer'
-import Spinn from '../Articals/Spinn'
+// import Spinn from '../Articals/Spinn'
 
 function Home() {
   return (
@@ -13,7 +13,7 @@ function Home() {
       <Testimonials/>
       <Prouduct/> 
       <Footer/>
-      <Spinn />
+      {/* <Spinn /> */}
     </div>
   )
 }

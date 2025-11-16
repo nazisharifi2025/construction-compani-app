@@ -3,10 +3,10 @@ import React from 'react'
 import { motion } from 'framer-motion'
 function Footer() {
   return (
-    <div className='h-[77vh] w-full bg-slate-950 '>
+    <div className='lg:h-[77vh] h-[93vh] w-full bg-slate-950 '>
         <div
         className=' h-full flex flex-col gap-10 items-center w-full'>
-        <div className='h-[83%] w-full  grid grid-cols-2'>
+        <div className='h-[83%] w-full  grid lg:grid-cols-2 grid-cols-1'>
         <motion.div
              initial={{x:-100,opacity:0}}
         whileInView={{x:0 ,opacity:1}}

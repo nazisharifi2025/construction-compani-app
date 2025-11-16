@@ -71,9 +71,9 @@ function Testimonials() {
         },
     ]
   return (
-    <div className='lg:h-[110vh] h-[70vh] w-full bg-no-repeat flex justify-center items-center bg-cover bg-center bg-[url(public/images/bg.avif)] '>
+    <div className='lg:h-[110vh] h-[83vh] w-full bg-no-repeat flex justify-center items-center bg-cover bg-center bg-[url(public/images/bg.avif)] '>
         <div className='h-full bg-black/70  w-full flex flex-col p-12 justify-center items-center gap-6'>
-        <h1 className='text-5xl text-white'>Our Clients say</h1>
+        <h1 className='text-5xl text-white text-center'>Our Clients say</h1>
         <div className='flex w-full h-full justify-center p-6 items-center'>
         <Slider {...settings} className='w-full h-full p-5 mx-auto'>
         {Card.map((card , index) => (

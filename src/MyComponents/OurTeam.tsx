@@ -20,9 +20,9 @@ function OurTeam() {
         },
     ]
   return (
-    <div className='h-screen w-[90%] mx-auto grid grid-cols-3 gap-4 justify-center items-center'>
+    <div className='lg:h-screen h-fit py-6 w-[90%] mx-auto grid lg:grid-cols-3 grid-cols-1 gap-4 justify-center items-center'>
         {CardS.map((card,index)=>(
-        <div key={index} className='h-[70vh] w-[320px] relative group'>
+        <div key={index} className='lg:h-[70vh] h-[60vh] lg:w-[320px] w-[95%] mx-auto relative group'>
                 <div className='flex flex-col -left-[10px] opacity-0 group-hover:opacity-100 group-hover:left-3 transition-all duration-700 ease-linear text-white top-3 absolute gap-3'>
                 <button className='rounded-full bg-amber-600 p-2'><Instagram/></button>
                 <button className='rounded-full bg-amber-600 p-2'><Twitter/></button>

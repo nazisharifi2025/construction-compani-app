@@ -56,8 +56,8 @@ function Servece() {
   return (
     <div className='h-fit w-full flex flex-col items-center'>
          <div className='h-[40vh] pt-14 flex flex-col gap-4 justify-center items-center w-full'>
-        <h1 className='text-3xl text-amber-600'>Search Our Compani Serveces</h1>
-        <input value={search} onChange={(e)=> setSearch(e.target.value)} type="search" className='w-[60%] p-3 outline-0 rounded-full border border-gray-400' placeholder='Search Our Serveces' />
+        <h1 className='text-3xl text-amber-600 text-center'>Search Our Compani Serveces</h1>
+        <input value={search} onChange={(e)=> setSearch(e.target.value)} type="search" className='lg:w-[60%] w-[90%] p-3 outline-0 rounded-full border border-gray-400' placeholder='Search Our Serveces' />
     </div>
     <div className='h-fit p-12 w-full flex justify-center items-center flex-wrap gap-7'>
         {filterServeces.map((serveces,index)=>(

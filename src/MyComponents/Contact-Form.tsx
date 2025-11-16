@@ -40,7 +40,7 @@ function ContactForm() {
     <div className="w-full h-fit my-12 py-12 flex justify-center items-center flex-col gap-4">
         <strong className="text-2xl font-bold text-amber-600">Get In Touch</strong>
         <h1 className="font-bold text-5xl">For Any Query</h1>
-        <div className="w-[80%] h-[80%] grid lg:grid-cols-2 grid-cols-1 ">
+        <div className="lg:w-[80%] w-[95%] h-[80%] grid lg:grid-cols-2 grid-cols-1 ">
             <div className="flex flex-col py-8 px-5 items-center justify-between gap-6 bg-gray-900">
                 <div className="flex gap-4 border items-center border-gray-400 text-white p-2 w-full h-24">
                     <MapPin size={36} className="text-amber-500"/>
