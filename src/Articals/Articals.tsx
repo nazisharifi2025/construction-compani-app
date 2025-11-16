@@ -4,14 +4,15 @@ import { useEffect, useState } from "react";
 function Articals() {
 const apiKey = "pub_f6d62b45913148c3bee350a618069981";
 const Url = `https://newsdata.io/api/1/latest?apikey=${apiKey}&q=pizza`;
-type Articals = [
-  id:string,
-  title:string,
-  description: string,
-  content: string,
-  url:string,
-  publishedAt: string,
-]
+type Articals = {
+  id: string;
+  image_url: string;
+  title: string;
+  description: string;
+  content: string;
+  publishedAt: string;
+};
+
 const [news , setNews] = useState<Articals[]>([]);
     useEffect(()=>{
       async function fetchdata(){

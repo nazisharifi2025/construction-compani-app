@@ -7,18 +7,19 @@ import Clock from "./Clock";
     function ApiWether() {
     const [cety,setCety] = useState("kabul");
     type wait ={  
-        main: string,
-        description: string,
-        icon: string
+      id: number;
+  main: string;
+  description: string;
+  icon: string;
     };
     interface teamp{
-        temp: number,
-        temp_min: number,
-        temp_max: number,
+       temp: number;
+  temp_min: number;
+  temp_max: number;
     }
     interface syst{
-        sunrise: number,
-        sunset: number,
+       sunrise: number;
+  sunset: number;
     }
     const [Wait , starttranstion] =useTransition();
     // برای اتظار دیتا
@@ -137,8 +138,8 @@ import Clock from "./Clock";
  <h1 className=" text-3xl">{item.description}</h1>
  </div>
                <div className="flex justify-between items-center space-x-4 w-full ">
-                <span className="flex flex-col"><span className="font-bold">SUNRISE:</span>{new Date(sysHerat?.sunrise*1000).toLocaleTimeString()}AM</span>
-                <span className="flex flex-col"><span className="font-bold">SUNSET:</span>{new Date(sysHerat?.sunset*1000).toLocaleTimeString()}PM</span>
+                <span className="flex flex-col"><span className="font-bold">SUNRISE:</span>{new Date((sysHerat?.sunrise ?? 0) * 1000).toLocaleTimeString()}AM</span>
+                <span className="flex flex-col"><span className="font-bold">SUNSET:</span>{new Date((sysHerat?.sunset ?? 0) * 1000).toLocaleTimeString()}PM</span>
                </div>
                </div>
             </div> 
@@ -174,8 +175,8 @@ import Clock from "./Clock";
  <h1 className=" text-3xl">{item.description}</h1>
  </div>
                <div className="flex justify-between items-center gap-4 w-full ">
-                <span className="flex flex-col"><span className="font-bold">SUNRISE:</span>{new Date(sysKabul?.sunrise*1000).toLocaleTimeString()}AM</span>
-                <span className="flex flex-col"><span className="font-bold">SUNSET:</span>{new Date(sysKabul?.sunset*1000).toLocaleTimeString()}PM</span>
+                <span className="flex flex-col"><span className="font-bold">SUNRISE:</span>{new Date((sysKabul?.sunrise ?? 0) * 1000).toLocaleTimeString()}AM</span>
+                <span className="flex flex-col"><span className="font-bold">SUNSET:</span>{new Date((sysKabul?.sunset ?? 0) * 1000).toLocaleTimeString()}PM</span>
                </div>
                </div>
             </div> 
@@ -211,8 +212,8 @@ import Clock from "./Clock";
  <h1 className=" text-3xl">{item.description}</h1>
  </div>
                <div className="flex justify-between gap-4 items-center w-full ">
-                <span className="flex flex-col"><span className="font-bold">SUNRISE:</span>{new Date(sysBamyan?.sunrise*1000).toLocaleTimeString()}AM</span>
-                <span className="flex flex-col"><span className="font-bold">SUNSET:</span>{new Date(sysBamyan?.sunset*1000).toLocaleTimeString()}PM</span>
+                <span className="flex flex-col"><span className="font-bold">SUNRISE:</span>{new Date((sysBamyan?.sunrise ?? 0) * 1000).toLocaleTimeString()}AM</span>
+                <span className="flex flex-col"><span className="font-bold">SUNSET:</span>{new Date((sysBamyan?.sunset ?? 0) * 1000).toLocaleTimeString()}PM</span>
                </div>
                </div>
             </div> 
@@ -252,13 +253,12 @@ import Clock from "./Clock";
                 <span> <span className="font-bold">Max:</span>{main?.temp_max}°C</span>
                </div>
                <div className="flex justify-between items-center space-x-2 w-full ">
-                <span className="flex flex-col"><span className="font-bold">SUNRISE:</span>{new Date(sys?.sunrise*1000).toLocaleTimeString()}AM</span>
-                <span className="flex flex-col"><span className="font-bold">SUNSET:</span>{new Date(sys?.sunset*1000).toLocaleTimeString()}PM</span>
+                <span className="flex flex-col"><span className="font-bold">SUNRISE:</span>{new Date((sys?.sunrise ?? 0) * 1000).toLocaleTimeString()}AM</span>
+                <span className="flex flex-col"><span className="font-bold">SUNSET:</span>{new Date((sys?.sunset ?? 0) * 1000).toLocaleTimeString()}PM</span>
                </div>
                </div>
          </div> 
         ))}  
-
         {/* دیف بسته شدن awit */}
         </div>}
           {/* آخرین دیف */}
