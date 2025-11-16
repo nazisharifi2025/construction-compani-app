@@ -1,5 +1,4 @@
-import { Quote, Sliders, Star, StarHalf, StarIcon, Stars, StarsIcon } from 'lucide-react'
-import React from 'react'
+import { Quote, Star } from 'lucide-react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

@@ -1,6 +1,5 @@
 import { Clock, CommandIcon, User } from "lucide-react";
 import { useEffect, useState } from "react";
-import React from 'react'
 
 function Articals() {
 const apiKey = "pub_f6d62b45913148c3bee350a618069981";

@@ -1,5 +1,4 @@
-import { CheckCheckIcon, CheckCircleIcon, ChevronDownSquareIcon, ChevronLeft, ChevronRight, LineChartIcon } from 'lucide-react'
-import React from 'react'
+import {  ChevronLeft, ChevronRight } from 'lucide-react'
 import { motion } from 'framer-motion'
 function Herocontact() {
   return (

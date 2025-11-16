@@ -1,5 +1,4 @@
-import { ChevronRight, Facebook, Github, House, Instagram, Linkedin, MessageSquareCodeIcon, Phone, PhoneCall, PhoneCallIcon, Twitter, Youtube } from 'lucide-react'
-import React from 'react'
+import { ChevronRight, Facebook, Github, Instagram, Linkedin, Phone, PhoneCallIcon, Twitter, Youtube } from 'lucide-react'
 import { motion } from 'framer-motion'
 function Footer() {
   return (

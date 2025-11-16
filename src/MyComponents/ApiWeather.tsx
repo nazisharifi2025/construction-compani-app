@@ -1,13 +1,11 @@
     import { useEffect, useState, useTransition } from "react";
-import { ClipLoader, PuffLoader } from "react-spinners";
-import WeatherRainSpinner from "../Articals/Spinner";
+import { ClipLoader} from "react-spinners";
 import Clock from "./Clock";
 
     const API_Key = "7428939f153f70012602166492e9ae5d";
 
     function ApiWether() {
     const [cety,setCety] = useState("kabul");
-    const [query,setQuery]= useState(cety);
     type wait ={  
         main: string,
         description: string,

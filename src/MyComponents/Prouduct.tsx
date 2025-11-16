@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import {motion, transform} from "framer-motion";
 import { House, Repeat } from 'lucide-react';
 function Prouduct() {

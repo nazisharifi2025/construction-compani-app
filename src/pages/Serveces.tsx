@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Servece from '../MyComponents/Servece'
 import Footer from '../MyComponents/Footer'
 import Works from '../MyComponents/Works'

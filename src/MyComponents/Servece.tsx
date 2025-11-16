@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { ChevronRight } from 'lucide-react'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 function Servece() {
     const serveces = [

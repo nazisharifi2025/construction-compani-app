@@ -1,5 +1,4 @@
-import { Asterisk, Brush, Building, Building2Icon, CheckCircleIcon, Cross, Dessert, Drill, DrillIcon, Hammer, SignalLow,} from 'lucide-react'
-import React from 'react'
+
 import { motion } from 'framer-motion'
 function AboutCom() {
   return (
