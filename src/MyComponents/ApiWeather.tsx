@@ -102,7 +102,7 @@ import Clock from "./Clock";
            
 
     { Wait ? (
-        <div className="lg:h-full h-fit w-full flex justify-center items-center bg-gradient-to-b from-blue-400 to-blue-700">
+        <div className="lg:h-full h-screen w-full flex justify-center items-center bg-gradient-to-b from-blue-400 to-blue-700">
        <ClipLoader color="#36D7B7" size={50} />
     </div>
     ) : <div className="w-full lg:h-[50vh] h-fit flex justify-center flex-col gap-6 items-center">
