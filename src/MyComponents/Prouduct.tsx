@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import {motion, transform} from "framer-motion";
-import { House, Repeat } from 'lucide-react';
+import {motion} from "framer-motion";
+import { House} from 'lucide-react';
 function Prouduct() {
     const text =[
         {

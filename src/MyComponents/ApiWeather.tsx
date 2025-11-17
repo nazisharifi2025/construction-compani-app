@@ -62,6 +62,7 @@ import Clock from "./Clock";
         // دیتا دومی
               const [wheatherHerat,setwhetherHerat] = useState<wait[]>([]);
     const [mainHerat , setmainHerat] = useState<teamp | null>(null);
+    console.log(mainHerat);
     // const[dt , setDt] = useState("");
     const[sysHerat , setsysHerat] = useState<syst | null>(null);
         useEffect(()=>{
