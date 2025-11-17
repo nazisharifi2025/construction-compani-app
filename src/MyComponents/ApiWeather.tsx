@@ -29,7 +29,7 @@ import Clock from "./Clock";
     const[sys , setsys] = useState<syst | null>(null);
         useEffect(()=>{
         async function FeatchData() {
-            const url = `https://api.openweathermap.org/data/2.5/weather?q=Ghazni&appid=${API_Key}&units=metric&lang=fa`;
+            const url = `https://api.openweathermap.org/data/2.5/weather?q=Ghazni&appid=${API_Key}&units=metric&lang=en`;
            
             starttranstion(async() => {
         const respons = await fetch(url);
@@ -48,7 +48,7 @@ import Clock from "./Clock";
     const[sysKabul , setsysKabul] = useState<syst | null>(null);
         useEffect(()=>{
         async function FeatchDataKabul() {
-            const urlKabul = `https://api.openweathermap.org/data/2.5/weather?q=Kabul&appid=${API_Key}&units=metric&lang=fa`;
+            const urlKabul = `https://api.openweathermap.org/data/2.5/weather?q=Kabul&appid=${API_Key}&units=metric&lang=en`;
             starttranstion(async() => {
         const respons = await fetch(urlKabul);
         const data = await respons.json();
@@ -67,7 +67,7 @@ import Clock from "./Clock";
     const[sysHerat , setsysHerat] = useState<syst | null>(null);
         useEffect(()=>{
         async function FeatchDataHerat() {
-            const urlHerat = `https://api.openweathermap.org/data/2.5/weather?q=Herat&appid=${API_Key}&units=metric&lang=fa`;
+            const urlHerat = `https://api.openweathermap.org/data/2.5/weather?q=Herat&appid=${API_Key}&units=metric&lang=en`;
             starttranstion(async() => {
         const respons = await fetch(urlHerat);
         const data = await respons.json();
@@ -85,7 +85,7 @@ import Clock from "./Clock";
     const[sysBamyan, setsysBamyan] = useState<syst | null>(null);
         useEffect(()=>{
         async function FeatchDataBamyan() {
-            const urlBamyan = `https://api.openweathermap.org/data/2.5/weather?q=Bamyan&appid=${API_Key}&units=metric&lang=fa`;
+            const urlBamyan = `https://api.openweathermap.org/data/2.5/weather?q=Bamyan&appid=${API_Key}&units=metric&lang=en`;
             starttranstion(async() => {
         const respons = await fetch(urlBamyan);
         const data = await respons.json();
