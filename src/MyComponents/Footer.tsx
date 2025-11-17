@@ -2,7 +2,7 @@ import { ChevronRight, Facebook, Github, Instagram, Linkedin, Phone, PhoneCallIc
 import { motion } from 'framer-motion'
 function Footer() {
   return (
-    <div className='lg:h-[77vh] h-[93vh] w-full bg-slate-950 '>
+    <div className='lg:h-[77vh] h-[100vh] w-full bg-slate-950 '>
         <div
         className=' h-full flex flex-col gap-10 items-center w-full'>
         <div className='h-[83%] w-full  grid lg:grid-cols-2 grid-cols-1'>
