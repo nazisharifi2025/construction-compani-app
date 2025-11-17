@@ -55,7 +55,7 @@ function Footer() {
         <motion.div
              initial={{x:-100,opacity:0}}
         whileInView={{x:0 ,opacity:1}}
-        transition={{duration:1.3, ease: 'linear'}}  className='h-full w-full grid grid-cols-2 justify-center items-center p-12 text-gray-400 space-x-4'>
+        transition={{duration:1.3, ease: 'linear'}}  className='lg:h-full h-[50vh] w-full grid grid-cols-2 justify-center items-center p-12 text-gray-400 space-x-4'>
            <div className='flex flex-col gap-2 '>
             <h1 className='font-bold text-xl text-white'>Quick Links</h1>
             <div className='flex'>
