@@ -9,7 +9,7 @@ function Footer() {
         <motion.div
              initial={{x:-100,opacity:0}}
         whileInView={{x:0 ,opacity:1}}
-        transition={{duration:1.3, ease: 'linear'}} className='flex flex-col justify-center p-6 text-white gap-8 h-full border-r border-amber-600'>
+        transition={{duration:1.3, ease: 'linear'}} className='flex flex-col justify-center p-6 text-white gap-8 h-full lg:border-r border-0 border-amber-600'>
             <h1 className='text-3xl font-bold font-paci text-amber-600'>Sharifi Constrction Company</h1>
             <p className='w-[90%] text-gray-400'>Aliquyam sed elitr elitr erat sed diam ipsum eirmod eos lorem nonumy. Tempor sea ipsum diam sed clita dolore eos dolores magna erat dolore sed stet justo et dolor.</p>
             <div className='flex flex-col gap-4 justify-start'>

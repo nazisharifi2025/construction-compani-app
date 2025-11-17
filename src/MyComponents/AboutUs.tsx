@@ -16,7 +16,7 @@ function AboutUs() {
             initial={{rotateZ: 360}}
             transition={{duration:12 , repeat:Infinity, ease : 'linear'}}
 
-            className='h-[75vh] w-[75vh] -z-50 -top-6 text-amber-600 lg:-right-5 -right-26 flex-wrap gap-10 rounded-full  flex justify-between items-center  absolute'>
+            className='lg:h-[75vh] h-[65vh] lg:w-[75vh] w-[80%] -z-50 -top-6  text-amber-600 lg:-right-5 -right-26 flex-wrap gap-10 rounded-full  flex justify-between items-center  absolute'>
               <div className='flex justify-between w-full'>
               <Building size={32}/>
               <Building2Icon size={32}/>
