@@ -7,8 +7,7 @@ function Works() {
             <p className='text-xl text-center'>You’re looking for a reliable construction partner or you’re looking to take the next step in your career, we want to hear from you!</p>
             <button className='rounded-full bg-amber-600 py-3 px-6 text-white font-bold'>Build a Project</button>
         </div>
-        <div className='h-full  '>
-        <img src="/images/building-2.png" className='h-full w-full' alt="" />
+        <div className='h-full bg-cover bg-center lg:w-1/2 w-full bg-[url("/images/building-2.png")]'>
         </div>
     </div>
   )
