@@ -8,7 +8,7 @@ function Works() {
             <button className='rounded-full bg-amber-600 py-3 px-6 text-white font-bold'>Build a Project</button>
         </div>
         <div className='h-full  '>
-        <img src="public/images/building-2.png" className='h-full w-full' alt="" />
+        <img src="/images/building-2.png" className='h-full w-full' alt="" />
         </div>
     </div>
   )
